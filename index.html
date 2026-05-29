@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Economia Circular & Bioinsumos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">Agro<span>Forte</span></div>
+            <nav class="nav-links">
+                <a href="#conceito">O Conceito</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>O Futuro do Agro é Sustentável</h1>
+            <p>O equilíbrio perfeito entre alta produtividade no campo, economia circular inteligente e a regeneração biológica da terra.</p>
+            <a href="#simulador" class="btn-main">Simular Impacto na Propriedade</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="conceito" class="section">
+            <h2 class="section-title">Economia Circular & Bioinsumos</h2>
+            <p class="section-intro">Transformando o modelo linear tradicional em um ecossistema vivo, autossuficiente e altamente rentável para o produtor rural.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🦠</div>
+                    <h3>Bioinsumos</h3>
+                    <p>Uso de soluções de origem vegetal, animal ou microbiana. Inoculantes biológicos capturam o nitrogênio do ar e bio-defensivos combatem pragas de forma natural, eliminando a dependência química e restaurando a vida do solo.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Economia Circular</h3>
+                    <p>Eliminação total do desperdício. Resíduos de colheita viram palhada protetora, e dejetos da pecuária são canalizados para biodigestores, gerando energia limpa (biogás) e biofertilizantes de alta performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section bg-light">
+            <h2 class="section-title">Por que fazer a transição?</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <strong>Independência Financeira:</strong> Proteção contra a flutuação cambial de fertilizantes químicos sintéticos importados.
+                </div>
+                <div class="benefit-item">
+                    <strong>Resiliência Climática:</strong> Solos ricos em matéria orgânica retêm mais água, protegendo a lavoura contra estiagens severas.
+                </div>
+                <div class="benefit-item">
+                    <strong>Valorização do Produto:</strong> Certificações de sustentabilidade que abrem as portas para os mercados internacionais mais exigentes.
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador" class="section">
+            <div class="simulator-box">
+                <h2 class="section-title">Simulador de Impacto Verde</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: #666;">Descubra o potencial econômico e ambiental estimado ao adotar práticas circulares e bioinsumos.</p>
+                
+                <div class="form-group">
+                    <label for="hectares">Área total de cultivo (em Hectares):</label>
+                    <input type="number" id="hectares" min="1" placeholder="Ex: 150" value="100">
+                </div>
+                <button id="btn-calcular" class="btn-calc">Calcular Impacto de Conversão</button>
+
+                <div id="resultados" class="results-grid hidden">
+                    <div class="result-card data-saving">
+                        <h4>Economia Estimada</h4>
+                        <p class="value" id="val-economia">R$ 0,00</p>
+                        <span class="detail">Economia anual na redução de fertilizantes e defensivos químicos tradicionais.</span>
+                    </div>
+                    <div class="result-card data-co2">
+                        <h4>Mitigação de Carbono</h4>
+                        <p class="value" id="val-co2">0 toneladas</p>
+                        <span class="detail">Estimativa de CO₂ eq sequestrado no solo ou evitado por ano.</span>
+                    </div>
+                    <div class="result-card data-residuos">
+                        <h4>Massa Orgânica Reutilizada</h4>
+                        <p class="value" id="val-residuos">0 toneladas</p>
+                        <span class="detail">Resíduos da safra e dejetos ciclados e convertidos em biofertilizante.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 AgroForte - Equilíbrio entre Produção e Meio Ambiente. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
